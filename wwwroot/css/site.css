@@ -1,0 +1,113 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Josefin+Slab&display=swap');
+
+/*How to call fonts
+
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Josefin Slab', serif;
+
+*/
+
+/*Shared CSS between all views.*/
+html {
+    font-size: 14px;
+}
+
+header, nav, footer{
+    background-color: #fbe77b; 
+}
+
+nav a, nav button, footer{
+    color: #14132f;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.hideable{
+    display: none;
+}
+
+.btn-filter {
+    background-color: #ecbc4d;
+    color: #ffff;
+    border: 1px solid #14132f;
+}
+
+.btn-filter:hover{
+    background-color: #ffff;
+    color: #14132f;
+}
+
+.top-buffer{
+    margin-bottom: 1em;
+}
+
+div.form-group {
+    margin: 1em 0;
+}
+
+div.disp-spacing {
+    margin-top: 0.5em;
+}
+
+form.index-form{
+    margin-bottom: 2em;
+}
+
+/*Add Fonts*/
+h1, h2, h3, h4, nav a, footer, footer a, th {
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+}
+
+p, td, dt, dd, a, label, input, option, input.btn {
+    font-family: 'Inconsolata', monospace;
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+img {
+    width: 202px;
+    border: 2px solid #14132f;
+    margin-top: 1em;
+}
+
+
+@media (min-width: 768px) {
+      html {
+        font-size: 16px;
+      }
+
+    .hideable {
+        display: revert;
+    }
+
+    img {
+        width: 302px;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
